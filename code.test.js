@@ -8,7 +8,7 @@ const jsc = require('jsverify');
 
 function originalfactorial(n) {
     if(n === 0) return 1;
-    else return n * factorial(n - 1);
+    else return n * originalfactorial(n - 1);
 }
 
 function originalcode(n) {
